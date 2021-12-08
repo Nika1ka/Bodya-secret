@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="logo2.ico">
+  <meta http-equiv="content-type" content="text/html charset=UTF-8" />
+  <title>Bodya secret</title>
+  <link rel="stylesheet" href="shop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="e1">
+    <div class="e2">
+      <a href="#"><img class="header_logo" src="header6.png" alt="Logo"></a>
+    </div>
+    <nav class="e3">
+      <ul class="e5 topmenu">
+        <li><a href="" style="color:red;">Главная</a>
+          <ul class="submenu">
+            <li><a href="">Вариант 1</a></li>
+            <li><a href="">Вариант 2</a></li>
+            <li><a href="">Вариант 2</a></li>
+            <li><a href="">Вариант 2</a></li>
+          </ul>
+        </li>
+        <li><a href="shop_services.html">Услуги</a>
+          <ul class="submenu">
+            <li><a href="">Вариант 1</a></li>
+            <li><a href="">Вариант 2</a></li>
+          </ul>
+        </li>
+        <li><a href="shop_contacts.html">Связь</a></li>
+      </ul>
+    </nav>
+    <div class="e4">
+      <input type="text" name="search" value="" placeholder="Поиск" autocomplete="off">
+    </div>
+      <div class="search_mobile">
+        <input type="text" name="search_mobile" value="" placeholder="Поиск" autocomplete="off">
+      </div>
+  </header>
+  <main>
+    <div class="flex-container" style = "width: 90%">
+      <img src="bin.jpg" onclick="show()" width="50" height="50" class="bin ptr">
+      <div class="cont">
+        <img src="item1.jpg" class="item_">
+        <center><br>
+          <h2>Комплект "Луи"</h2><br>
+          <p>Количество: 1 комплект</p><br>
+          <p>Цена: 250 UAH</p>
+          <button class="add_to_buy_button" onClick='buy("Комплект Луи: 250 UAN", 250);'>Добавить в корзину</button>
+        </center>
+      </div><div class="cont">
+        <img src="item2.jpg" class="item_">
+        <center><br>
+          <h2>Комплект "Шен"</h2><br>
+          <p>Количество: 1 комплект</p><br>
+          <p>Цена: 250 UAH</p>
+          <button class="add_to_buy_button" onClick='buy("Комплект Шен: 250 UAH", 250);'>Добавить в корзину</button>
+        </center>
+      </div><div class="cont">
+        <img src="item3.jpg" class="item_">
+        <center><br>
+          <h2>Комплект "Вий"</h2><br>
+          <p>Количество: 1 комплект</p><br>
+          <p>Цена: 350 UAH</p>
+          <button class="add_to_buy_button" onClick='buy("Комплект Вий: 350 UAH", 350);'>Добавить в корзину</button>
+        </center>
+      </div>
+      <div class="cont">
+        <img src="item4.jpg" class="item_">
+        <center><br>
+          <h2>Комплект "Нью"</h2><br>
+          <p>Количество: 1 комплект</p><br>
+          <p>Цена: 300 UAH</p>
+          <button class="add_to_buy_button" onClick='buy("Комплект Нью: 300 UAH", 300);'>Добавить в корзину</button>
+        </center>
+      </div>
+
+      <div id="grey"></div>
+
+      <div id="bin_window">
+        <div id="bin_window_window"></div>
+        <form>
+          <div class="sum_class"><span id="sum_costs" style="font-size: 20px;">Общая цена: 0 UAH</span></div>
+            <center>
+              <button class="bin_button1 bb1" onClick='offer(); return false;'>Оформить заказ</button>
+              <button class="bin_button2 bb2" onClick='not_show(); return false;'>Продолжить покупки</button>
+            </center>
+        </form>
+      </div>
+
+      <div id="window" class="window">
+        <form><br>
+          <img style="margin: 0 4px;" src="close.jpg" width="50" class="bin" onClick="not_show()">
+          <span style="font-size: 20px;">Ваш заказ оформлен!</span>
+        </form>
+      </div>
+    </div>
+    <div id = "ad">
+      <div class = "main_ad_text">
+          Для Вас:
+      </div>
+      <a href="https://nika1ka.github.io/aphrodite/" style = "all: initial;">
+          <div class = "ad_element">
+              <img src="https://nika1ka.github.io/aphrodite/Images/logo.png" width="80" align="center" style = "padding-bottom: 5px;">
+              <p>Салон красоты «Афродита»</p>
+              <p>Самые низкие цены в Харькове!</p>
+          </div>
+      </a>
+      <a href="https://darkwi11ow.github.io/Book_UA/knigarnya-about_us.html" style = "all: initial;">
+          <div class = "ad_element">
+              <img src="https://nika1ka.github.io/aphrodite/Images/ad/2.png" width="50" align="center" style = "padding-bottom: 5px;">
+              <p>Книгарня.UA</p>
+              <p>Любишь почитать? Тебе сюда!</p>
+          </div>
+      </a>
+      <a href="https://yevavin.github.io/restaurant-delivery/index.html" style = "all: initial;">
+          <div class = "ad_element">
+              <img src="https://yevavin.github.io/restaurant-delivery/images/cooking.png" align="center" style = "padding-bottom: 5px;">
+              <p>Gastropub «La'reserve»</p>
+              <p>Ресторан, который не оставит Вас равнодушным</p>
+          </div>
+      </a>
+  </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#" style="color:white;">Главная</a></li>
+        <li><a href="shop_services.html">Услуги</a></li>
+        <li><a href="shop_contacts.html">Связь</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- <script type="text/javascript" src="shop_slider.js"></script> -->
+  <script type="text/javascript" src="shop_buy.js"></script>
+</body>
+</html>
